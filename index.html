@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript CH</title>
+</head>
+
+<body>
     <script>
         let user = prompt("Ingrese su número de usuario");
-        switch (user){
-case user === 1:
-    alert("USTED ES EL USUARIO ADMINISTRADOR")
-    break;
-case user === 2:
-    alert("USTED ES EL USUARIO ESTANDAR")
-    break;
-case user === 3:
-    alert("USTED ES EL USUARIO INVITADO")
-        break;
-    default:
-        alert("USTED NO ES NINGUN USUARIO")
-        break;
+        switch (user) {
+            case "1":
+                alert("USTED ES EL USUARIO ADMINISTRADOR")
+                switchU()
+                break;
+            case "2":
+                alert("USTED ES EL USUARIO ESTANDAR")
+                switchU()
+                break;
+            case "3":
+                alert("USTED ES EL USUARIO INVITADO")
+                switchU()
+                break;
+            default:
+                alert("USTED NO ES NINGUN USUARIO")
+                switchU()
+                break;
         }
+        function switchU() {
+            if (user === "1") {
+                usuario = "Administrador";
+            }
+            else if (user === "2") {
+                usuario = "Estandar";
+            }
+            else if (user === "3") {
+                usuario = "Invitado";
+            }
+            else {
+                usuario = "No es ningun usuario";
+            }
+            if (usuario === "No es ningun usuario") {
+                var h = document.createElement("H1")
+                var t = document.createTextNode("NO TIENE ACCESO AL SISTEMA")
+                h.appendChild(t)
+                document.body.appendChild(h);
+            }
+            else {
+                var h = document.createElement("H1")
+                var t = document.createTextNode("Bienvenido usuario " + usuario + " al sistema")
+                h.appendChild(t)
+                document.body.appendChild(h);
+            }
+        }
+
 // for(i = 0; i < 10; i++){
 //         alert(i);
 // }
     </script>
-</head>
-<body>
-    <h1>Prueba de script condicional!</h1>
 </body>
+
 </html>
