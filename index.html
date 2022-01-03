@@ -9,53 +9,8 @@
 </head>
 
 <body>
-    <script>
-        let user = prompt("Ingrese su número de usuario");
-        switch (user) {
-            case "1":
-                alert("USTED ES EL USUARIO ADMINISTRADOR")
-                switchU()
-                break;
-            case "2":
-                alert("USTED ES EL USUARIO ESTANDAR")
-                switchU()
-                break;
-            case "3":
-                alert("USTED ES EL USUARIO INVITADO")
-                switchU()
-                break;
-            default:
-                alert("USTED NO ES NINGUN USUARIO")
-                switchU()
-                break;
-        }
-        function switchU() {
-            if (user === "1") {
-                usuario = "Administrador";
-            }
-            else if (user === "2") {
-                usuario = "Estandar";
-            }
-            else if (user === "3") {
-                usuario = "Invitado";
-            }
-            else {
-                usuario = "No es ningun usuario";
-            }
-            if (usuario === "No es ningun usuario") {
-                var h = document.createElement("H1")
-                var t = document.createTextNode("NO TIENE ACCESO AL SISTEMA")
-                h.appendChild(t)
-                document.body.appendChild(h);
-            }
-            else {
-                var h = document.createElement("H1")
-                var t = document.createTextNode("Bienvenido usuario " + usuario + " al sistema")
-                h.appendChild(t)
-                document.body.appendChild(h);
-            }
-        }
-    </script>
+<script src=./script.js></script>
+<button onClick="window.location.reload();">Volver a operar</button>
 </body>
 
 </html>
