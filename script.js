@@ -20,11 +20,13 @@ let city = prompt("Ingrese su ciudad");
 const comprador1 = new comprador(name, lastname, tel, city);
 comprador1.mostrar();
 
+let prod = prompt("Ingrese el producto que desea comprar");
 let valor = prompt("Ingrese el valor del producto que desea comprar");
 let cant = prompt("Ingrese la cantidad de productos iguales que lleva");
 let total = valor * cant;
-alert("El total a pagar es: $" + total);
+const list = [id= prod, valor= valor, cant= cant, total= total];
+console.log(list);
 var h = document.createElement("H1")
-var t = document.createTextNode("La suma de sus productos es: $" + total)
+var t = document.createTextNode("El valor unitario de: " + prod + " es: $" + valor + ". Usted lleva: " + cant + ". El total es: $" + total)
 h.appendChild(t)
 document.body.appendChild(h);
