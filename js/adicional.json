@@ -2,7 +2,7 @@
     {
         "id": 1,
         "mensaje": "¡Es un gusto atenderte!",
-        "imagen": "image/thankyouline.png",
+        "imagen": "images/thankyouline.png",
         "emprendimiento": "Fabi Papelería",
         "url": "https://www.github.com/fabiancitonline"
     }
